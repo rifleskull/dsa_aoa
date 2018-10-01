@@ -2,15 +2,8 @@
 #include<stdlib.h>
 int v[50][50];
 int profit;
-int max(int a,int b)
-{
-	if(a>b)
-	return a;
 
-	else
-	return b;
-}
-
+#define max(a, b) a >= b ? a : b
 
 void display(int wt[],int val[],int n)
 {
